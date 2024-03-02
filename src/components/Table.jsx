@@ -83,7 +83,7 @@ function Table({ rows, setData }) {
               <td>{row.transactions}</td>
               <th>
                 <div className="flex gap-4 items-center">
-                  <Link to={'/dashboard/user/' + row.id}>
+                  <Link to={'/user/' + row.id}>
                     <button className="btn btn-info btn-outline btn-xs">
                       Edit
                     </button>

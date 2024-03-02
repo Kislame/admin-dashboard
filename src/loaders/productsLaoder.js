@@ -4,7 +4,6 @@ const productsLoader = async () => {
       "https://fakestoreapi.com/products/category/women's clothing"
     );
     const data = await res.json();
-    console.log(data);
     return data;
   } catch (err) {
     throw Error('couldnt fetch products');

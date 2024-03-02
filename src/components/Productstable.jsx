@@ -80,7 +80,7 @@ function Productstable({ products, setProducts }) {
               <td>{`$${row.price}`}</td>
               <th>
                 <div className="flex gap-4 items-center">
-                  <Link to={'/dashboard/product/' + row.id}>
+                  <Link to={'/product/' + row.id}>
                     <button className="btn btn-info btn-outline btn-xs">
                       Edit
                     </button>
