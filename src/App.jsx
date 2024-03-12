@@ -1,5 +1,5 @@
 import {
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   RouterProvider,
   Route,
@@ -20,9 +20,10 @@ import productLoader from './loaders/productLoader';
 import productsLoader from './loaders/productsLaoder';
 import LoadingSpinner from './components/Loading';
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route
+      basename="/templates/admin-dashboard/dist"
       path="/"
       element={
         <React.Suspense fallback={<LoadingSpinner />}>
